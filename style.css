@@ -1,0 +1,78 @@
+body
+{
+  font-family: Courier, serif;
+  margin: 15px auto;
+  width: 640px;
+}
+
+footer#page_footer
+{
+  clear: both;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+header p
+{
+  font-style: italic;
+}
+
+header#page_header
+{
+  text-align: center;
+  width: 100%;
+}
+
+header#page_header h1
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+header#page_header h2
+{
+  color: grey;
+  padding: 0px;
+  margin: 0px;
+}
+
+section#thoughts
+{
+  width: 100%;
+  padding: 10px;
+}
+
+article.thought
+{
+  padding: 5px;
+  margin: 5px;
+  border: 2px;
+  border-color: grey;
+  border-style: solid;
+  background-color: lightgrey;
+}
+
+.thought header h2
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+.quote
+{
+  font-size: x-large;
+  font-style: italic;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.quote:before
+{
+  content: open-quote;
+}
+
+.quote:after
+{
+  content: close-quote;
+}
