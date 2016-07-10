@@ -68,6 +68,12 @@ section#thoughts
   padding: 10px;
 }
 
+article header aside
+{
+  font-size: small;
+  font-style: italic;
+}
+
 article.thought
 {
   padding: 5px;

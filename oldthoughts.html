@@ -84,6 +84,93 @@
       </article>
       <article class='thought'>
         <header>
+          <h2>Confidence From Your Code</h2>
+          <p>
+            <time datetime="2014-02-26">February 26th, 2014</time>
+          </p>
+          <aside>
+          <a href="http://femgineer.com/2014/02/confidence-from-your-code/">Original Post</a> on <a href="http://femgineer.com/">Femgineer</a>
+          </aside>
+        </header>
+        <p>
+        Is that feature done? Has that bug been fixed? These are the types of
+        questions programmers get asked. Usually from a product manager that
+        has a timeline and needs things done. This is their job. Yours is to
+        provide the end result and know that what has been developed works!
+        But sometimes you’re just not sure.
+        </p>
+        <p>
+        You may be fortunate to have a manager that pushes back for you to give
+        you the time you need for development. If not, how do you manage these
+        expectations? How do you go about gaining this confidence in yourself
+        and the code? What can you do to bring about change? For now, focus on
+        the small gains and what you have the most control over, the code you
+        write.
+        </p>
+        <h3>Test Driven Development</h3>
+        </p>
+        <p>
+        <p>
+        One of the ways to gain confidence is to test your code. Often
+        developers approach testing by placing debug statements in their code
+        to make sure something works correctly. However, that is an ad hoc
+        approach. It makes the code less readable, plus it doesn’t provide the
+        reader (a future developer and maintainer of the code) any context!
+        </p>
+        <p>
+        You instead want to take a test driven development approach. You start
+        by writing the test cases, along with the conditions that need to be
+        satisfied to pass the tests, before you write your code.
+        </p>
+        <p>
+        The benefit to this approach is that you can repeatedly run that test
+        to know your code still works the way you expect. The not so known
+        advantage is that when a bug shows up 2-3 weeks later (or longer), when
+        you look at that code, you’ll have a basis for how it functions and can
+        fix it quickly.
+        </p>
+        <h3>Applying it to Legacy Systems</h3>
+        <p>
+        I suggest this style approach because I have taken it myself. Being
+        tasked with adding a features to a legacy Classic ASP site, I knew
+        making changes was going to be difficult. With very little structure
+        and pages consisting of 1,000+ lines, introducing new code could cause
+        things to break. Realizing this, I decided that a small library would
+        be helpful; however, how would I write any tests?
+        </p>
+        <p>
+        To test this new library I happened upon a blog of someone who had done
+        something similar. As to not repeat myself, I started with his code as
+        a basis for testing.
+        </p>
+        <ul>
+          <li>The first tests were just to validate that a method call would produce a certain set of HTML tags. </li>
+          <li>Then I included some tests to handle both fetching and submitting data into the application’s database. </li>
+          <li>Once I had the pieces in place, I wrote some helper methods so inserting the code was as close to a single line as possible.</li>
+        </ul>
+        <p>
+        This code later went into production and I considered all was well.
+        About a month later, the senior developer ping me and let me know there
+        were 2 issues that had come up from the feature I had written.
+        </p>
+        <p>
+        After looking at the examples, I went straight to the tests. In both
+        cases, I had not written a test for using this code in the way that was
+        causing an issue in production. These tests were written (red) and then
+        the functionality was implemented (green). I even got to refactor some
+        of the duplication. All of this took only a few hours.
+        </p>
+        <p>
+        The final time there was an issue, I had it resolved in under an hour
+        </p>
+        <p>
+        Taking a test driven development approach improves code quality and
+        boosts your confidence as a coder. Plus it saves you time and make you
+        a more productive developer.
+        </p>
+      </article>
+      <article class='thought'>
+        <header>
           <h2>Disaster Recovery</h2>
           <p>
             <time datetime="2013-02-11">February 11th, 2013</time>
