@@ -78,6 +78,26 @@ article.thought
   background-color: lightgrey;
 }
 
+article.respect
+{
+  background-color: #fc3;
+}
+
+article.honesty
+{
+  background-color: #06c;
+}
+
+article.responsibility
+{
+  background-color: #0c6;
+}
+
+article.caring
+{
+  background-color: #c00;
+}
+
 .thought header h2
 {
   padding: 0px;
