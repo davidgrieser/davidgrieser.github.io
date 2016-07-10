@@ -5,7 +5,7 @@ body
   width: 640px;
 }
 
-ul lh
+ul lh, ol lh
 {
   font-weight: bold;
   margin-left: -2em;
