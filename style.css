@@ -5,6 +5,12 @@ body
   width: 640px;
 }
 
+ul lh
+{
+  font-weight: bold;
+  margin-left: -2em;
+}
+
 footer#page_footer
 {
   clear: both;
